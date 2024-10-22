@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icone.png">
+    <title>Converte Aí</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <header class="header">
+        <h1>Converte Aí</h1>
+        <img src="icone.png" alt="icone de pilha de moedas" class="icon">
+    </header>
+    <div class="conteudo">
+        <form class="form-container" onsubmit="event.preventDefault(); converterMoeda();">
+            <label for="moedas" class="moedabase">Selecione a moeda base para a conversão:</label>
+            <select id="moedas" name="moedas">
+                <option value="USD">Dólar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="BRL">Real (BRL)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+            </select>
+            <label for="valor" class="moedabase">Digite a quantidade a ser convertida:</label>
+            <input type="text" id="valor" placeholder="Ex: 100">
+            <button type="submit" class="converter-button" aria-label="Converter moeda">Converter</button>
+        </form>
+        <br>
+         <div class="form-group filtro-container">
+          <label for="filtromoeda" class="moedabase">Filtrar moedas:</label>
+          <input type="text" class="filtromoeda" id="filtromoeda" oninput="filtrarTabela()" placeholder="Digite o código da moeda para pesquisa...">
+        </div>
+        <table id="tabelaConversao" style="display:none; width: 100%;">
+            <thead>
+                <tr>
+                    <th>Moeda</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+        <div id="paginacao" style="margin-top: 20px;"></div>
+    </div>
+    <script type="module" src="funcoes.js"></script>
+    <footer class="footer">
+      <p>&copy; 2024 Converte Aí. Todos os direitos reservados. Feito por André Mendonça e Luiz Fellipe.</p>
+  </footer>
+</body>
+</html>

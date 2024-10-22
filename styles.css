@@ -1,0 +1,169 @@
+body {
+    background-image: url(background.png);
+    background-color: #F5F5DC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #002366;
+}
+
+.header {
+    background-color: #4e4e2ff3; /* Cor de fundo do header */
+    color: #F5F5DC; /* Cor do texto */
+    padding: 0px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+}
+
+.header h1 {
+    margin: 0; /* Remove a margem do h1 */
+    font-size: 32px;
+}
+
+.header .icon {
+    width: 50px; /* Ajuste o tamanho do ícone */
+    height: 50px; /* Mantém a proporção da imagem */
+    padding-left: 10px;
+    margin: 0;
+}
+
+.conteudo {
+    background-color: #e6e6cee8; /* Cor de fundo suave */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: darkslategrey;
+}
+
+.moedabase {
+    font-size: 20px;
+    margin: 0 20px; /* Margem horizontal para espaçar a label do select */
+}
+
+.form-container {
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Centraliza horizontalmente os elementos */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+select, input {
+    padding: 10px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte para 18px */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Cantos arredondados */
+    background-color: #f5f5dc; /* Cor de fundo */
+    margin: 0 20px; /* Margem horizontal para espaçar o select do label e do botão */
+}
+
+.converter-button {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    background-color: #4e4e2f; /* Cor de fundo do botão */
+    color: #F5F5DC; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+.converter-button:hover {
+    background-color: #3d3d2f; /* Cor ao passar o mouse */
+}
+
+.tabela-conversao {
+    width: 100%; /* Largura total */
+    margin-top: 20px; /* Espaçamento acima da tabela */
+    border-collapse: collapse; /* Remove espaços entre as células */
+}
+
+.tabela-conversao th, .tabela-conversao td {
+    border: 1px solid #ccc; /* Borda das células */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.tabela-conversao th {
+    background-color: #4e4e2ff3; /* Cor de fundo do cabeçalho */
+    color: #F5F5DC; /* Cor do texto do cabeçalho */
+}
+
+.tabela-conversao tr:nth-child(even) {
+    background-color: #f5f5dc; /* Cor de fundo das linhas pares */
+}
+
+#tabelaConversao {
+    width: 100%; /* Define a largura da tabela */
+    border-collapse: collapse; /* Remove espaços entre as células */
+    background-color: white; /* Cor de fundo da tabela */
+    margin-top: 20px; /* Espaçamento acima da tabela */
+}
+
+#tabelaConversao th, #tabelaConversao td {
+    border: 1px solid #ccc; /* Adiciona bordas às células */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    background-color: white; /* Cor de fundo das células */
+}
+
+#tabelaConversao th {
+    background-color: #4e4e2ff3; /* Cor de fundo do cabeçalho (exemplo: verde) */
+    color: #F5F5DC; /* Cor do texto do cabeçalho */
+}
+
+
+#paginacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#paginacao button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4e4e2f;
+    color: #F5F5DC;
+    cursor: pointer;
+}
+
+#paginacao button:hover {
+    background-color: #3d3d2f;
+}
+
+#paginacao button.active {
+    font-weight: bold;
+    background-color: #3d3d2f; /* Destaque para a página ativa */
+}
+
+.filtro-container {
+    display: flex; /* Ativa o flexbox para a linha do filtro */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-top: 20px; /* Espaçamento acima do filtro */
+}
+
+label.moedabase {
+    margin-right: 10px; /* Espaçamento à direita da label */
+}
+
+.filtromoeda {
+    flex: 1; /* Faz com que o input ocupe toda a largura disponível */
+    padding: 10px; /* Mantém o padding para espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Cantos arredondados */
+    background-color: #f5f5dc; /* Cor de fundo */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    margin-left: 10px; /* Espaço entre a label e o input */
+}
+
+.footer {
+    background-color: #4e4e2f; /* Cor de fundo do rodapé */
+    color: #F5F5DC; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 5px 0; /* Espaçamento interno */
+    position: relative; /* Pode ser 'relative' para fluxo normal ou 'absolute' se desejar fixar na parte inferior */
+    bottom: 0; /* Para fixar o rodapé na parte inferior, se necessário */
+    width: 100%; /* Largura total */
+    margin-top: 10px; /* Espaço acima do rodapé */
+}
